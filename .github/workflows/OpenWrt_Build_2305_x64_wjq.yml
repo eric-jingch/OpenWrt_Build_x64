@@ -80,7 +80,7 @@ jobs:
   Build_2305_x64_wjq:
     needs: [CheckRepo]
     if: ${{ needs.CheckRepo.outputs.output != 'hello' || github.event.inputs.checkupdates66 == 'true'}}
-    runs-on: g733
+    runs-on: self-hosted
 
     steps:
     - name: Checkout
